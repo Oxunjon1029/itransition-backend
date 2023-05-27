@@ -2,10 +2,10 @@
   "name": "itransition-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "../node-react-app/server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon /sever/index.js"
+    "start": "nodemon ../node-react-app/server/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "express-validator": "^7.0.1",
     "http-status-codes": "^2.2.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.1"
+    "mongoose": "^7.2.1",
+    "nodemon": "^2.0.22"
   }
 }

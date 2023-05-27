@@ -16,7 +16,7 @@ app.use('/api', userRouter)
 app.use(express.static(path.join(__dirname + '/public')))
 const start = async () => {
   try {
-    await connectDB(process.env?.MONGO_URL);
+    await connectDB(process.env?.MONGO_URL || "mongodb+srv://Genius:Aoxunjon1029@cluster0.mtrdd.mongodb.net/itransition");
     app.listen(PORT, () => {
       console.log(`Server is running on PORT ${PORT}`);
     });
